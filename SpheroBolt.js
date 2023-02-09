@@ -3,7 +3,11 @@
 //Project: Sphero Bolt
 
 
-//Hello World Practice Program
+/**
+ * Hello World Practice Program
+ * LED turn to blue
+ * Forward for for 2 seconds at a speed of 60
+*/
  async function helloWorld() {
  await speak("Hello World", true);
  setMainLed({ r: 0, g: 0, b: 255});
@@ -33,3 +37,5 @@ async function startProgram() {
     await ninetyDegree()   //<--calling the ninetyDegree function to run it
 
 }
+
+
