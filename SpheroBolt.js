@@ -29,6 +29,11 @@ async function ninetyDegree() {
    await roll((getHeading() + 90), 60, 4); // heading 90 degrees at 60 speed for 4 seconds
 }
 */
+/**
+ * startSquare function turns to hte color blue at high brightness. It then says Hello Square waits one second and then spin 360 degrees
+ * It then runs a loop 4 times. It changes it's color randomly plays a coin sound and then rotates 90 degrees and moves forward at 60 speed
+ * for 3 seconds
+*/
 async function startSquare() {
 
     setMainLed({ r: 0, g: 0, b: 255 });
@@ -36,6 +41,8 @@ async function startSquare() {
     await speak("Hello Square", true);
 
     await delay(1);
+    
+    await spin(360, 1)
 
     for (var _i1 = 0; _i1 < 4; _i1++) {
 
