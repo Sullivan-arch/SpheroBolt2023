@@ -1,3 +1,3 @@
-//Programmer: Sullivan Abegg
-//Date: 2.6.2023
-//Project: Sphero Bolt
+//Team: Sullivan Abegg & Dylan Bellinger
+//Date: 2.13.2023
+//Project: SpheroBolt Labyrinth
