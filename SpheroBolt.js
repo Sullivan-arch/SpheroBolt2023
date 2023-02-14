@@ -13,16 +13,17 @@
  setSpeed(0);
 
 }
-async function ninetyDegrees() {
-    await roll((getHeading() + 0), 30, 2);
+async function runMaze() {
+    await roll((getHeading() + 0), 20, 2);
     setMainLed({ r: 0, g: 0, b: 255});
     await delay (2);
-    await roll((getHeading() + 90), 40, 2);  
+    await roll((getHeading() + 90), 50, 2);  
     await delay (2);
     await roll((getHeading() + 90), 40, 2);
+    await Sound.Animal.Eagle.play(true);
 }
 
 async function startProgram() {
     await ledSpeak()  
-    await ninetyDegrees()
+    await runMaze()
 }
