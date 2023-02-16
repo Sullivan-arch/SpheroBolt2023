@@ -18,19 +18,26 @@ async function runMaze() {
     setMainLed({ r: 0, g: 0, b: 255});
     await delay (2);
     
-    await roll((getHeading() + 90), 55, 2);  
+    await roll((getHeading() + 90), 50, 2);  
     await delay (2);
-    await roll((getHeading() + 90), 35, 2);
+    await roll((getHeading() + 90), 37, 2);
     await Sound.Animal.Eagle.play(true);
     
     await roll((getHeading() + 35), 40, 2);
     setMainLed({ r: 225, g: 0, b: 0});
     
-    await roll((getHeading() + 270), 25, 2);
-    await roll((getHeading() + 270), 25, 2);
+    await roll((getHeading() + 270), 21, 2);
+    await roll((getHeading() + 270), 20, 2);
     await roll((getHeading() + 0), 25, 2);
-    await roll((getHeading() + 90), 25, 2);
+    await roll((getHeading() + 90), 20, 2);
     await Sound.Animal.Eagle.play(true);
+    
+    await roll((getHeading() + 45), 25, 2);
+    await roll((getHeading() + 270), 30, 2);
+    setMainLed({ r: 0, g: 225, b: 0});
+    
+    await roll((getHeading() + 270), 30, 2);
+    await roll((getHeading() + 315), 20, 1);
 }
 
 async function startProgram() {
