@@ -20,7 +20,7 @@ async function runMaze() {
     
     await roll((getHeading() + 90), 50, 2);  
     await delay (2);
-    await roll((getHeading() + 90), 39, 2);
+    await roll((getHeading() + 90), 37, 2);
     await Sound.Animal.Eagle.play(true);
     await delay (2);
     
@@ -29,21 +29,28 @@ async function runMaze() {
     await delay (2);
     
     await roll((getHeading() + 270), 26, 2);
-    await roll((getHeading() + 270), 23, 2);
+    await roll((getHeading() + 270), 25, 2);
     await roll((getHeading() + 0), 23, 2);
     await delay (2);
-    await roll((getHeading() + 90), 27, 2);
+    await roll((getHeading() + 90), 29, 2);
     await Sound.Animal.Eagle.play(true);
     await delay (2);
     
-    await roll((getHeading() + 45), 30, 2);
-    await roll((getHeading() + 270), 30, 2);
+    await roll((getHeading() + 45), 32, 2);
+    await roll((getHeading() + 270), 28, 2);
     await delay (2);
     setMainLed({ r: 0, g: 225, b: 0});
     
-    await roll((getHeading() + 270), 30, 2);
-    await roll((getHeading() + 315), 25, 1);
-    await roll((getHeading() + 270), 45, 1);
+    await roll((getHeading() + 270), 34, 2);
+    await Sound.Animal.Eagle.play(true);
+    await delay (2); 
+    
+    await roll((getHeading() + 315), 24, 2);
+    await roll((getHeading() + 45), 40, 2);
+    setMainLed({ r: 45, g: 0, b: 225});
+    await delay (2);
+    await scrollMatrixText('Finish', { r: 225, g: 225, b: 225 }, 30, true)
+    
     
 }
 
